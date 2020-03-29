@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JScarlet</title>
+  <icon>http://yoursite.com/icon.png</icon>
+  <subtitle>以悲观之心态，过乐观之生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-03-29T09:46:16.666Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>JScarlet</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019年终总结</title>
+    <link href="http://yoursite.com/2019/12/31/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/12/31/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</id>
+    <published>2019-12-31T15:10:32.000Z</published>
+    <updated>2020-03-29T09:46:16.666Z</updated>
+    
+    <summary type="html">
+    
+      「去年今日此门中，人面桃花相映红。人面不知何处去，桃花依旧笑春风。」
+    
+    </summary>
+    
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11年中等球迷碎碎念</title>
+    <link href="http://yoursite.com/2019/06/14/11%E5%B9%B4%E4%B8%AD%E7%AD%89%E7%90%83%E8%BF%B7%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <id>http://yoursite.com/2019/06/14/11%E5%B9%B4%E4%B8%AD%E7%AD%89%E7%90%83%E8%BF%B7%E7%A2%8E%E7%A2%8E%E5%BF%B5/</id>
+    <published>2019-06-14T15:13:22.000Z</published>
+    <updated>2020-03-29T10:00:27.488Z</updated>
+    
+    <summary type="html">
+    
+      「马刺总冠军👊」
+    
+    </summary>
+    
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>设置二级域名并绑定html页面记录</title>
+    <link href="http://yoursite.com/2019/02/27/%E8%AE%BE%E7%BD%AE%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%E5%B9%B6%E7%BB%91%E5%AE%9Ahtml%E9%A1%B5%E9%9D%A2%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2019/02/27/%E8%AE%BE%E7%BD%AE%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%E5%B9%B6%E7%BB%91%E5%AE%9Ahtml%E9%A1%B5%E9%9D%A2%E8%AE%B0%E5%BD%95/</id>
+    <published>2019-02-27T15:32:08.000Z</published>
+    <updated>2020-03-29T09:50:10.287Z</updated>
+    
+    <summary type="html">
+    
+      「namesilo添加二级域名并绑定页面」
+    
+    </summary>
+    
+    
+      <category term="技术总结" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2018年终总结</title>
+    <link href="http://yoursite.com/2019/01/01/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/01/01/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</id>
+    <published>2019-01-01T15:03:09.000Z</published>
+    <updated>2020-03-29T10:03:35.529Z</updated>
+    
+    <summary type="html">
+    
+      「整理时间真是一种极具挑逗性的行为」
+    
+    </summary>
+    
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自我审视：七原罪</title>
+    <link href="http://yoursite.com/2018/10/06/%E8%87%AA%E6%88%91%E5%AE%A1%E8%A7%86%EF%BC%9A%E4%B8%83%E5%8E%9F%E7%BD%AA/"/>
+    <id>http://yoursite.com/2018/10/06/%E8%87%AA%E6%88%91%E5%AE%A1%E8%A7%86%EF%BC%9A%E4%B8%83%E5%8E%9F%E7%BD%AA/</id>
+    <published>2018-10-06T15:15:55.000Z</published>
+    <updated>2020-03-29T09:53:15.984Z</updated>
+    
+    <summary type="html">
+    
+      「相信自己在世界上扮演了某种角色，是不是很荒谬？」
+    
+    </summary>
+    
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一些胡思乱想</title>
+    <link href="http://yoursite.com/2018/08/17/%E4%B8%80%E4%BA%9B%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    <id>http://yoursite.com/2018/08/17/%E4%B8%80%E4%BA%9B%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</id>
+    <published>2018-08-17T15:22:29.000Z</published>
+    <updated>2020-03-29T09:51:43.793Z</updated>
+    
+    <summary type="html">
+    
+      「人们的记忆很短暂，这是人类最棒也是最糟糕的特质。」
+    
+    </summary>
+    
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+</feed>
