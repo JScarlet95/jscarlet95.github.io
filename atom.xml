@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T09:46:16.666Z</updated>
+  <updated>2020-03-30T08:59:56.471Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客搭建</title>
+    <link href="http://yoursite.com/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
+    <published>2020-03-29T14:16:05.000Z</published>
+    <updated>2020-03-30T08:59:56.471Z</updated>
+    
+    <summary type="html">
+    
+      「懒癌如我终于当一回人了」
+    
+    </summary>
+    
+    
+      <category term="Hexo博客" scheme="http://yoursite.com/categories/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>2019年终总结</title>

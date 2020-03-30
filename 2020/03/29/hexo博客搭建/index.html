@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="以悲观之心态，过乐观之生活"><title>hexo博客搭建 | JScarlet</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">hexo博客搭建</h1><a id="logo" href="/.">JScarlet</a><p class="description">以悲观之心态，过乐观之生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">hexo博客搭建</h1><div class="post-meta">2020-03-29<span> | </span><span class="category"><a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/">Hexo博客</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.8k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 6</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" href="/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/#vcomment"><span class="valine-comment-count" data-xid="/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"></span><span> 条评论</span></a><div class="post-content"><p>##心路历程</p>
+<p>因为疫情原因，今年的寒假巨长无比，像我这种腊月二十七才到家的人都已经呆了两个月了。不过好歹这两个月也算是没有虚度太多，和组里同学一起赶完了3月6号的deadline，然后花了一整周的时间把毕业论文也整了个七七八八。交完论文初稿的这两周，按照修改意见对论文缝缝补补，追了追番，终于在一个看直播的下午，想起来了去年立的flag——把博客重新搭起来。</p>
+<p>之前租了台海外的服务器，结果在下半年因为众所周知的原因集体拉胯，服务器全挂，不过万幸写的文章还是及时备份了。再加上当时忙着找完工作又开始准备投稿，这件事情就一直拖到了现在。想来域名已经续到了明年三月份，不能白白被资本主义薅了羊毛，最近我这个重度懒癌患者终于当一回人了。</p>
+<p>本来想着租一台云服务器还是用WordPress来搭，瞄了瞄几大厂商服务器的价钱后，无产阶级的我还是选择了Hexo+GitHub托管的免费方案，现在感觉还挺香的。毕竟自己给这个博客的定位就是给自己一个保存自己想法的地方，在手机电脑上随时都能看一下。看着别人的博客搞得花里胡哨的又是广告又是donate的，真是玩不来玩不来。</p>
+<p>OK，言归正传，还是老老实实记录一下搭建过程。</p>
+<p>##环境配置</p>
+<ul>
+<li>Git</li>
+<li>Node.js</li>
+</ul>
+<p>因为要托管到GitHub上，Git自然是必要的。至于要装Node.js，大概是因为Hexo是基于Node.js构建的博客工具，Hexo的插件也都放在npm上。（不知道可不可以这么写）</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>很简单，就一行代码，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g hexo-cli</span></span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，进入想要建站的目录，执行以下命令进行初始化：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;folder&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，得到的目录结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<p>以上均摘自Hexo官网，大概解释一下这些文件或者文件夹的作用，_config.yml就是配置网站的一些基本组件的配置文件，需要手动进行修改；package.json是包含所安装插件的版本等信息的文件，不需要手动去改；scaffolds是模版文件夹，里面放的有draft、post和page的模版markdown文件；source文件夹下默认两个带下划线的文件夹_drafts和_posts，前者是放未完成的草稿（draft）的地方，后者是放文章（post）的地方，如果新建页面的话，就会创建出以页面名称作为名字的文件夹；themes就是放博客主题的地方。</p>
+<p>##GitHub Pages托管</p>
+<ol>
+<li>安装托管到GitHub需要的插件hexo-deployer-git，命令如下：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git --save</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>在GitHub上创建新的repository，命名规则应该是<code>&lt;Github用户名&gt;.github.io</code>，</p>
+</li>
+<li><p>修改_config.yml里面deploy部分：</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;&lt;username&gt;&#x2F;&lt;project&gt;</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>type即为git，repo即为repository的URL，branch我直接用了master分支。</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="*绑定域名"></a>*绑定域名</h2><ol>
+<li><p>在命令行中ping已经托管的博客的地址<code>&lt;username&gt;.github.io</code>，得到IP地址；</p>
+</li>
+<li><p>在购买域名的网站上进行域名解析，将IP地址绑定到对应的域名下；</p>
+<img src="/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/step1.png" class title="Step1">
+</li>
+<li><p>在GitHub的repository中，在设置页面找到GitHub Pages，在Custom Domain中填写上面绑定的域名：</p>
+<img src="/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/custom_domain.png" class>
+</li>
+<li><p>在public文件夹下创建CNAME文件（没有后缀名），将绑定的域名填写进去即可。</p>
+</li>
+<li><p>域名解析有一定延迟，等待域名解析好后，输入域名即可跳转到博客页面</p>
+</li>
+</ol>
+<h2 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h2><p>博客的主题用的是看起来很清爽简约的主题Maupassant（莫泊桑？），原作者是<a href="https://github.com/pagecho/" target="_blank" rel="noopener">Cho</a>大神，hexo版本是<a href="https://github.com/tufu9441/maupassant-hexo" target="_blank" rel="noopener">tufu9441</a>在原版的基础上进行修改的，都是大佬。</p>
+<p>说起来看到这个主题也是有点巧合，在研一上《中国特色社会主义理论与实践研究》这门课时，老师布置的作业是写《论工业社会及其未来》的读后感，然后我在网上找到了一个博主的一篇博客，就是中英译文版的<a href="http://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html" target="_blank" rel="noopener">《论工业社会及其未来》</a>，目前博客里的一些风格也是参照了这个，后续我也会加一些自定义的页面等等，现在也有了一些idea。</p>
+<p>安装主题也很简单，其实就是把主题项目拉下来放到themes文件夹下，然后安装Hexo的渲染插件即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-renderer-pug --save</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-renderer-sass --save</span></span><br></pre></td></tr></table></figure>
+
+<p>然后编辑_config.yml文件，将theme改为maupassant。</p>
+<p>主题组件也是主要修改_config.yml文件进行开启，目前主要开了这几个：valine、google_search、busuanzi、wordcount。</p>
+<h2 id="评论开启"><a href="#评论开启" class="headerlink" title="评论开启"></a>评论开启</h2><p>本来想着这个博客就是自己写给自己玩的，没打算开评论，最后想了想还是应该打开吧，说不定有人就碰巧看到了也碰巧想交流一番呢，说不定还有哪个迷路的小姑凉点进来了呢，也算是自己的一份期待吧。</p>
+<p>评论插件用的是valine</p>
+<blockquote>
+<p>Valine 诞生于2017年8月7日，是一款基于<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>的快速、简洁且高效的无后端评论系统。 </p>
+<p>理论上支持但不限于静态博客，目前已有<a href="https://valine.js.org/hexo.html" target="_blank" rel="noopener">Hexo</a>、<a href="https://valine.js.org/jekyll.html" target="_blank" rel="noopener">Jekyll</a>、<a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a>、<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>、<a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a> 等博客程序在使用Valine。</p>
+</blockquote>
+<p>使用的话需要先到<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>注册一个账号，然后新建一个应用，创建好后，到设置里面的<code>应用Keys</code>中拿到<code>AppID</code>和<code>AppKey</code>填到主题文件夹下的_config.yml文件中修改对应的值，之后再进行部署即可。</p>
+<h2 id="渲染和部署"><a href="#渲染和部署" class="headerlink" title="渲染和部署"></a>渲染和部署</h2><p>渲染和部署有两个命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
+
+<p>虽然还没有去研究这两个命令的具体操作过程，不过从打印信息来看的话，<code>hexo g</code>应该就是现在本地把markdown文件还有等等其他一些配置文件渲染成html文件等等，然后再附加了一个commit的过程，<code>hexo d</code>就是把渲染好的html界面提交到远端服务器上。不过渲染速度真的很快，基本都是几秒钟就OK了，内部原理还是要学习一下的，以后看情况自己写个主题。</p>
+<h2 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h2><p>Hexo提供了三种默认的布局，draft、post跟page，draft为草稿，post为文章，page为新的页面，创建的命令为：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new [layout] &lt;title&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>默认不写layout直接用<code>hexo new &lt;title&gt;</code>是创建新的post，这个可以到最外层的_config.yml中进行修改。</p>
+<p>如果创建的是一个draft，那么部署后博客也不会展示，需要使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo publish [layout] &lt;title&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个命令的作用其实就相当于将文件从_draft文件夹移动到_post文件夹下。</p>
+<hr>
+<p>目前主要就整了这么多活，后续一些功能或者idea再慢慢添加，to be continued…</p>
+</div><div class="tags"><a href="/tags/%E6%80%BB%E7%BB%93/"><i class="fa fa-tag"></i>总结</a><a href="/tags/Hexo/"><i class="fa fa-tag"></i>Hexo</a></div><div class="post-nav"><a class="next" href="/2019/12/31/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2019年终总结</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' ? true : false;
+var verify = 'false' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'ci6iFFNzgSuKN2jeIawgdW6P-gzGzoHsz',
+  appKey:'ajqdUDrHdITKVfoezF1xlzUm',
+  placeholder:'',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo%E5%8D%9A%E5%AE%A2/">Hexo博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/">享受生活</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/">技术总结</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 15px;">总结</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 15px;">生活</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/03/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">hexo博客搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/31/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2019年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/14/11%E5%B9%B4%E4%B8%AD%E7%AD%89%E7%90%83%E8%BF%B7%E7%A2%8E%E7%A2%8E%E5%BF%B5/">11年中等球迷碎碎念</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/02/27/%E8%AE%BE%E7%BD%AE%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%E5%B9%B6%E7%BB%91%E5%AE%9Ahtml%E9%A1%B5%E9%9D%A2%E8%AE%B0%E5%BD%95/">设置二级域名并绑定html页面记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/2018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">2018年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/06/%E8%87%AA%E6%88%91%E5%AE%A1%E8%A7%86%EF%BC%9A%E4%B8%83%E5%8E%9F%E7%BD%AA/">自我审视：七原罪</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/17/%E4%B8%80%E4%BA%9B%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/">一些胡思乱想</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">JScarlet.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
