@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-30T08:59:56.471Z</updated>
+  <updated>2021-03-06T12:26:52.614Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>I met a girl</title>
+    <link href="http://yoursite.com/2021/03/05/I-met-a-girl/"/>
+    <id>http://yoursite.com/2021/03/05/I-met-a-girl/</id>
+    <published>2021-03-05T14:05:32.000Z</published>
+    <updated>2021-03-06T12:26:52.614Z</updated>
+    
+    <summary type="html">
+    
+      「I met a girl，不过老实说，小说电影都很少有这么展开的。」
+    
+    </summary>
+    
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>hexo博客搭建</title>
