@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-09-12T08:18:44.143Z</updated>
+  <updated>2021-09-12T08:23:06.227Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,23 +18,19 @@
   
   <entry>
     <title>博士之路</title>
-    <link href="http://yoursite.com/2021/09/11/%E5%8D%9A%E5%A3%AB%E4%B9%8B%E8%B7%AF/"/>
-    <id>http://yoursite.com/2021/09/11/%E5%8D%9A%E5%A3%AB%E4%B9%8B%E8%B7%AF/</id>
-    <published>2021-09-11T12:04:13.084Z</published>
-    <updated>2021-09-12T08:18:44.143Z</updated>
+    <link href="http://yoursite.com/2021/09/12/%E5%8D%9A%E5%A3%AB%E4%B9%8B%E8%B7%AF/"/>
+    <id>http://yoursite.com/2021/09/12/%E5%8D%9A%E5%A3%AB%E4%B9%8B%E8%B7%AF/</id>
+    <published>2021-09-12T08:05:32.000Z</published>
+    <updated>2021-09-12T08:23:06.227Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;一直计划着要在小秦小盆友正式开学之前给小秦小盆友写一些我想说的话，但是一方面是这一段时间工作上一直在说的两个team的unify不太顺利，各种事情比较多一直没有抽出足够的时间去记录下来；另一方面随着小秦小盆友慢慢熟悉香港的环境之后，各方面也在慢慢发生变化，断断续续地记录可能
-        
-      
+      「冲！」
     
     </summary>
     
+    
+      <category term="享受生活" scheme="http://yoursite.com/categories/%E4%BA%AB%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
